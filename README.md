@@ -2,6 +2,8 @@
 
 ![alt tag](https://github.com/sergigrau/DAWM06UF4-2-AJAX-exercicis/blob/master/imatges/node.png)
 ![alt tag](https://github.com/sergigrau/DAWM06UF4-3-Express-material/blob/master/public/logo.png)
+![alt tag](https://ca.wikipedia.org/wiki/Fitxer:MongoDB-logo.png)
+![alt tag](https://github.com/pugjs/pug-logo/blob/master/PNG/pug-final-logo_-colour-128.png)
 
 <h1>ExpressJS Workshop</h1>
 
@@ -12,4 +14,7 @@
 5.POST<br/>
 6.FileUpload<br/>
 7.MiddleWare<br/>
+8.Express Generator, basic routing<br/>
+9.Express Generator, advanced rounting and CRUD operations over MongoDB with monk<br/>
+
 
