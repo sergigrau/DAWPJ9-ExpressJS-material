@@ -2,7 +2,7 @@
 
 ![](https://github.com/sergigrau/DAWM06UF4-2-AJAX-exercicis/blob/master/imatges/node.png)
 ![alt tag](https://github.com/sergigrau/DAWM06UF4-3-Express-material/blob/master/public/logo.png)
-<img src="https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" width="100" height="100">
+<img src="https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg"  height="100">
 ![alt tag](https://github.com/pugjs/pug-logo/blob/master/PNG/pug-final-logo_-colour-128.png)
 
 <h1>ExpressJS Workshop</h1>
