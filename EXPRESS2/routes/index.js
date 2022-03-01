@@ -75,12 +75,12 @@ exports.modificarAlumneBD = function(db) {
         var collection = db.get('usercollection');
 
         // desen a la BD
-        collection.update({ "email" : email},{
+        collection.update({ "email" : email},{$set:{
             "nom" : nom,
             "email" : email
-        }, function (err, doc) {
+        }}, function (err, doc) {
             if (err) {
-                
+                console.log(err)
                 res.send("problemes amb la base de dades.");
             }
             else {
