@@ -1,20 +1,20 @@
 {
-  "name": "EXPRESS2",
+  "name": "express2",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "express": "~3.4.8",
-    "static-favicon": "~1.0.0",
-    "morgan": "~1.0.0",
-    "cookie-parser": "~1.0.1",
     "body-parser": "~1.0.0",
-    "debug": "~0.7.4",
-    "jade": "*",
-    "stylus": "0.42.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.18.3",
+    "pug": "2.0.0-beta11",
     "mongodb": "*",
-    "monk": "*"
+    "monk": "*",
+    "morgan": "~1.9.1",
+    "static-favicon": "~1.0.0",
+    "stylus": "0.42.3"
   }
 }
