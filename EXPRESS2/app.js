@@ -11,7 +11,7 @@ var routes = require('./routes');
 // connexio BDs
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/alumnes');
+var db = monk('mongodb://127.0.0.1:27017/alumnes');
 
 var app = express();
 
