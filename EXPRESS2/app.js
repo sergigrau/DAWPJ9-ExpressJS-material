@@ -7,8 +7,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes');
-var users = require('./routes/user');
-
 
 // connexio BDs
 var mongo = require('mongodb');
@@ -20,21 +18,17 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 app.use(favicon());
 app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(app.router);
+app.use(cookieParser());
 
 app.get('/', routes.index);
-app.get('/users', users.list);
-
-
 
 app.get('/salutacio', routes.salutacio);
 app.get('/llistarAlumnes', routes.llistarAlumnes(db));
@@ -42,12 +36,9 @@ app.get('/afegirAlumne', routes.afegirAlumne);
 app.get('/modificarAlumne', routes.modificarAlumne);
 app.get('/esborrarAlumne', routes.esborrarAlumne);
 
- 
 app.post('/afegirAlumneBD', routes.afegirAlumneBD(db));
 app.post('/modificarAlumneBD', routes.modificarAlumneBD(db));
 app.post('/esborrarAlumneBD', routes.esborrarAlumneBD(db));
-
-
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
